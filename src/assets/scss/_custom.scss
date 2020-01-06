@@ -1,0 +1,98 @@
+.nav-list > li {
+    @apply text-white;
+    &:last-child {
+		@apply border-b-0;
+    }
+    &:hover {
+		@apply bg-primaryHover;
+    }
+    & a {
+    	@apply pl-5 py-3;
+    }
+    &.active {
+		@apply bg-primaryHover;
+    }
+
+    .nav-sub-list > li {
+        @apply pl-5 py-3 text-white;
+        &:last-child {
+            @apply mb-0;
+        }
+        &:hover {
+            @apply bg-primaryHoverDark;
+        }
+        &.active {
+            @apply bg-primaryHoverDark;
+        }
+    }
+}
+
+.form-label {
+    @apply block tracking-wide text-gray-900 text-sm mb-2;
+}
+
+.form-input-text {
+    @apply appearance-none block w-full bg-white text-gray-900 border rounded py-3 px-4 mb-3;
+}
+
+.btn {
+    @apply px-5 py-3 text-white rounded-lg;
+
+    &.btn-primary {
+        @apply bg-primary;
+    }
+
+    &.btn-primary:hover {
+        @apply bg-primaryHover;
+    }
+}
+
+// badges
+
+.badge {
+    @apply bg-blue-600 text-white rounded-full px-2 py-1 text-xs uppercase tracking-wider;
+
+    &.badge-primary {
+        @apply bg-primary text-white;
+    }
+
+    &.badge-red {
+        @apply bg-red-600 text-white;
+    }
+
+    &.badge-pink {
+        @apply bg-pink-600 text-white;
+    }
+
+    &.badge-blue {
+        @apply bg-blue-600 text-white;
+    }
+
+    &.badge-indigo {
+        @apply bg-indigo-600 text-white;
+    }
+
+    &.badge-purple {
+        @apply bg-purple-600 text-white;
+    }
+
+    &.badge-green {
+        @apply bg-green-600 text-white;
+    }
+
+    &.badge-teal {
+        @apply bg-teal-600 text-white;
+    }
+
+    &.badge-gray {
+        @apply bg-gray-600 text-black;
+    }
+
+    &.badge-orange {
+        @apply bg-orange-600 text-white;
+    }
+
+    &.badge-yellow {
+        @apply bg-yellow-600 text-white;
+    }
+}
